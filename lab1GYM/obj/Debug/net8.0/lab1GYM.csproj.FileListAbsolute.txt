@@ -1,0 +1,14 @@
+/Users/katerina/Desktop/uni/istp/lab1GYM/Lab1GYM/bin/Debug/net8.0/lab1GYM.deps.json
+/Users/katerina/Desktop/uni/istp/lab1GYM/Lab1GYM/bin/Debug/net8.0/lab1GYM.runtimeconfig.json
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/bin/Debug/net8.0/lab1GYM.dll
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/bin/Debug/net8.0/lab1GYM.pdb
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/obj/Debug/net8.0/lab1GYM.csproj.AssemblyReference.cache
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/obj/Debug/net8.0/lab1GYM.GeneratedMSBuildEditorConfig.editorconfig
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/obj/Debug/net8.0/lab1GYM.AssemblyInfoInputs.cache
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/obj/Debug/net8.0/lab1GYM.AssemblyInfo.cs
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/obj/Debug/net8.0/lab1GYM.csproj.CoreCompileInputs.cache
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/obj/Debug/net8.0/lab1GYM.dll
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/obj/Debug/net8.0/refint/lab1GYM.dll
+/Users/katerina/Desktop/uni/istp/lab1GYM/lab1GYM/obj/Debug/net8.0/lab1GYM.pdb
+/Users/katerina/Desktop/uni/istp/lab1GYM/Lab1GYM/obj/Debug/net8.0/lab1GYM.genruntimeconfig.cache
+/Users/katerina/Desktop/uni/istp/lab1GYM/Lab1GYM/obj/Debug/net8.0/ref/lab1GYM.dll
