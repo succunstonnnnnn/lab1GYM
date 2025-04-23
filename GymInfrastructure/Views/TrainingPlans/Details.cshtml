@@ -1,0 +1,146 @@
+@model GymDomain.Model.TrainingPlan
+
+@{
+ViewData["Title"] = "Details";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+    
+    <div class="sticky-top bg-white shadow-sm pb-3 mb-4" style="z-index: 1030;">
+        <div class="text-center">
+            <h1 class="fw-bold mb-2" style="font-size: 2.4rem; letter-spacing: 1px;">DETAILS</h1>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3">
+            <form id="startForm" asp-action="StartTraining" method="post" asp-route-id="@Model.Id">
+                <button type="button" id="startTrainingBtn" class="btn-modern btn-start">Start training</button>
+            </form>
+
+
+            <form asp-action="EndTraining" method="post" asp-route-id="@Model.Id">
+                <button type="submit" class="btn-modern btn-end">Finish training</button>
+            </form>
+        </div>
+    </div>
+
+    <dl class="row px-4">
+        <dt class="col-sm-2 fw-semibold text-uppercase" style="font-size: 0.95rem;">Name</dt>
+        <dd class="col-sm-10">@Model.Name</dd>
+
+        <dt class="col-sm-2 fw-semibold text-uppercase" style="font-size: 0.95rem;">Description</dt>
+        <dd class="col-sm-10">@Model.Description</dd>
+
+        <dt class="col-sm-2 fw-semibold text-uppercase" style="font-size: 0.95rem;">Exercises</dt>
+        <dd class="col-sm-10 offset-sm-2">
+            <div class="row row-cols-2 row-cols-md-4 g-2">
+                @foreach (var ex in Model.TrainingPlanExercises.Select(e => e.Exercises))
+                {
+                <div class="col">
+                    <div class="card text-center p-2 position-relative" style="font-size: 12px;">
+                        <img src="@ex.ImagePath"
+                             alt="@ex.Name"
+                             class="mx-auto mb-2"
+                             style="width: 80px; height: 80px; object-fit: cover; border-radius: 6px;" />
+
+                        <div class="fw-semibold text-uppercase" style="font-size: 11px;">@ex.Name</div>
+                        <div class="text-muted" style="font-size: 10px;">@ex.Description</div>
+
+                        @if (!string.IsNullOrEmpty(ex.ReferenceUrl))
+                        {
+                        <a href="@ex.ReferenceUrl"
+                           target="_blank"
+                           class="btn btn-outline-secondary btn-sm mt-1"
+                           style="font-size: 10px; padding: 2px 6px;">
+                            View Guide
+                        </a>
+                        }
+                    </div>
+                </div>
+                }
+            </div>
+        </dd>
+    </dl>
+
+    @if (TempData["Message"] != null)
+    {
+    <div class="alert alert-success animate__animated animate__fadeInDown text-center" id="training-alert">
+        @TempData["Message"]
+    </div>
+    }
+    
+    <div class="text-center mt-4" style="font-size: 0.95rem;">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-link px-2">Edit</a>
+        |
+        <a asp-action="Index" class="btn btn-link px-2">Back to List</a>
+    </div>
+
+
+
+</div>
+
+@section Scripts {
+<script>
+    setTimeout(function () {
+        var alert = document.getElementById('training-alert');
+        if (alert) alert.style.display = 'none';
+    }, 3000);
+
+    const startBtn = document.getElementById('startTrainingBtn');
+    if (startBtn) {
+        startBtn.addEventListener('click', function () {
+            startBtn.textContent = 'Training is conducting...';
+            startBtn.disabled = true;
+            startBtn.classList.remove('btn-success');
+            startBtn.classList.add('btn-secondary');
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const checkboxes = document.querySelectorAll('.exercise-checkbox');
+        checkboxes.forEach(chk => {
+            chk.addEventListener('change', function () {
+                if (chk.checked) {
+                    chk.closest('.card').classList.add('border-success');
+                } else {
+                    chk.closest('.card').classList.remove('border-success');
+                }
+            });
+        });
+    });
+</script>
+
+<style>
+    .btn-modern {
+        padding: 10px 20px;
+        font-weight: 600;
+        border-radius: 8px;
+        font-size: 14px;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        transition: all 0.3s ease;
+    }
+
+    .btn-start {
+        background-color: #000;
+        color: #fff;
+        border-color: #000;
+    }
+
+    .btn-start:hover {
+        background-color: #fff;
+        color: #000;
+    }
+
+    .btn-end {
+        background-color: #f5f5f5;
+        color: #000;
+        border: 2px solid #000;
+    }
+
+    .btn-end:hover {
+        background-color: #000;
+        color: #fff;
+    }
+</style>
+}

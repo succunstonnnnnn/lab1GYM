@@ -1,0 +1,14 @@
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/bin/Debug/net9.0/GymDomain.deps.json
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/bin/Debug/net9.0/GymDomain.runtimeconfig.json
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/bin/Debug/net9.0/GymDomain.dll
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/bin/Debug/net9.0/GymDomain.pdb
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/GymDomain.csproj.AssemblyReference.cache
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/GymDomain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/GymDomain.AssemblyInfoInputs.cache
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/GymDomain.AssemblyInfo.cs
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/GymDomain.csproj.CoreCompileInputs.cache
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/GymDomain.dll
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/refint/GymDomain.dll
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/GymDomain.pdb
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/GymDomain.genruntimeconfig.cache
+/Users/katerina/Desktop/uni/istp/GymMVC/GymDomain/obj/Debug/net9.0/ref/GymDomain.dll

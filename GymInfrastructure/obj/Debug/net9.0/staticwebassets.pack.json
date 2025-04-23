@@ -1,0 +1,397 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/obj/Debug/net9.0/scopedcss/projectbundle/GymInfrastructure.bundle.scp.css",
+      "PackagePath": "staticwebassets/GymInfrastructure.6im6xxt9vt.bundle.scp.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/css/site.css",
+      "PackagePath": "staticwebassets/css/site.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/favicon.ico",
+      "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/bicepcurl.jpg",
+      "PackagePath": "staticwebassets/images/exercises/bicepcurl.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/burpees.jpeg",
+      "PackagePath": "staticwebassets/images/exercises/burpees.jpeg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/crunches.jpg",
+      "PackagePath": "staticwebassets/images/exercises/crunches.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/jumping jacks.jpg",
+      "PackagePath": "staticwebassets/images/exercises/jumping jacks.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/lunges.jpg",
+      "PackagePath": "staticwebassets/images/exercises/lunges.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/mountainclimbers.jpg",
+      "PackagePath": "staticwebassets/images/exercises/mountainclimbers.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/plank.jpg",
+      "PackagePath": "staticwebassets/images/exercises/plank.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/pushup.jpg",
+      "PackagePath": "staticwebassets/images/exercises/pushup.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/squat.jpg",
+      "PackagePath": "staticwebassets/images/exercises/squat.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/exercises/tricepdip.jpg",
+      "PackagePath": "staticwebassets/images/exercises/tricepdip.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/fitness-background.jpg",
+      "PackagePath": "staticwebassets/images/fitness-background.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/BeefSteak.jpg",
+      "PackagePath": "staticwebassets/images/meals/BeefSteak.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/GreekYogurt.jpg",
+      "PackagePath": "staticwebassets/images/meals/GreekYogurt.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/GrilledChickenBreast.jpg",
+      "PackagePath": "staticwebassets/images/meals/GrilledChickenBreast.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/Omelette.png",
+      "PackagePath": "staticwebassets/images/meals/Omelette.png"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/PeanutButterToast.jpg",
+      "PackagePath": "staticwebassets/images/meals/PeanutButterToast.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/ProteinSmoothie.jpg",
+      "PackagePath": "staticwebassets/images/meals/ProteinSmoothie.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/QuinoaSalad.jpg",
+      "PackagePath": "staticwebassets/images/meals/QuinoaSalad.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/SalmonFillet.jpg",
+      "PackagePath": "staticwebassets/images/meals/SalmonFillet.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/TunaSandwich.jpg",
+      "PackagePath": "staticwebassets/images/meals/TunaSandwich.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/images/meals/VegetableStirFry.jpg",
+      "PackagePath": "staticwebassets/images/meals/VegetableStirFry.jpg"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/js/site.js",
+      "PackagePath": "staticwebassets/js/site.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/LICENSE",
+      "PackagePath": "staticwebassets/lib/bootstrap"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/css/bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.js.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.js.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/bootstrap/dist/js/bootstrap.min.js.map",
+      "PackagePath": "staticwebassets/lib/bootstrap/dist/js/bootstrap.min.js.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery-validation/LICENSE.md",
+      "PackagePath": "staticwebassets/lib/jquery-validation/LICENSE.md"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery-validation/dist/additional-methods.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery-validation/dist/additional-methods.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/additional-methods.min.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery-validation/dist/jquery.validate.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery-validation/dist/jquery.validate.min.js",
+      "PackagePath": "staticwebassets/lib/jquery-validation/dist/jquery.validate.min.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery/LICENSE.txt",
+      "PackagePath": "staticwebassets/lib/jquery/LICENSE.txt"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery/dist/jquery.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery/dist/jquery.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery/dist/jquery.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.min.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery/dist/jquery.slim.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery/dist/jquery.slim.min.js",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.js"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/lib/jquery/dist/jquery.slim.min.map",
+      "PackagePath": "staticwebassets/lib/jquery/dist/jquery.slim.min.map"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/uploads/17c00fea-dca2-41b3-b64e-ec55ca5cbdf5.png",
+      "PackagePath": "staticwebassets/uploads/17c00fea-dca2-41b3-b64e-ec55ca5cbdf5.png"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/uploads/2096dbca-41ad-4f88-8102-2342c62bfac9.png",
+      "PackagePath": "staticwebassets/uploads/2096dbca-41ad-4f88-8102-2342c62bfac9.png"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/uploads/3156cc67-f7d9-43d3-9574-abe33bbc85f3.png",
+      "PackagePath": "staticwebassets/uploads/3156cc67-f7d9-43d3-9574-abe33bbc85f3.png"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/uploads/35514d41-3098-4059-b5b5-b964d1b43d3d.png",
+      "PackagePath": "staticwebassets/uploads/35514d41-3098-4059-b5b5-b964d1b43d3d.png"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/uploads/70df826a-e82a-47a7-9f34-a154e89cc30b.png",
+      "PackagePath": "staticwebassets/uploads/70df826a-e82a-47a7-9f34-a154e89cc30b.png"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/uploads/982ce712-ab9d-4991-b6a1-325e31220c4b.png",
+      "PackagePath": "staticwebassets/uploads/982ce712-ab9d-4991-b6a1-325e31220c4b.png"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/uploads/ca196ef6-7c92-4f77-b9e6-636c63a4e144.png",
+      "PackagePath": "staticwebassets/uploads/ca196ef6-7c92-4f77-b9e6-636c63a4e144.png"
+    },
+    {
+      "Id": "/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/wwwroot/uploads/d04e41ff-b47f-4355-bb14-d5a4d82a4284.png",
+      "PackagePath": "staticwebassets/uploads/d04e41ff-b47f-4355-bb14-d5a4d82a4284.png"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.GymInfrastructure.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.GymInfrastructure.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.build.GymInfrastructure.props",
+      "PackagePath": "build\\GymInfrastructure.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.GymInfrastructure.props",
+      "PackagePath": "buildMultiTargeting\\GymInfrastructure.props"
+    },
+    {
+      "Id": "obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.GymInfrastructure.props",
+      "PackagePath": "buildTransitive\\GymInfrastructure.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

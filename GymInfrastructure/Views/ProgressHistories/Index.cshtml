@@ -1,0 +1,73 @@
+@model IEnumerable<GymDomain.Model.ProgressHistory>
+
+@{
+ViewData["Title"] = "Training History";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .btn-outline-dark:hover {
+        background-color: black !important;
+        color: white !important;
+    }
+
+    .btn-delete {
+        color: #2600005B;
+        border: 1px solid #2600005B;
+        background-color: transparent;
+        font-weight: 400;
+    }
+
+    .btn-delete:hover {
+        background-color: #d5d5d5;
+        color: #2600005B;
+    }
+
+    .btn-create {
+        border: 1px solid black;
+        background-color: white;
+        color: black;
+        font-weight: 500;
+    }
+
+    .btn-create:hover {
+        background-color: black;
+        color: white;
+    }
+</style>
+
+<div class="container mt-2 sticky-top bg-white" style="z-index: 1020;">
+    <div class="d-flex justify-content-between align-items-center mb-4 pt-3">
+        <h2 class="mb-0">Training History</h2>
+        <a asp-action="Create" class="btn btn-create">Add New</a>
+    </div>
+</div>
+
+<table class="table table-bordered table-hover align-middle text-center">
+    <thead class="table-light">
+    <tr>
+        <th>Note</th>
+        <th>Date</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td class="align-middle">@item.Note</td>
+        <td class="align-middle">
+            <div style="font-weight: 500;">@item.Date.ToString("dd.MM.yyyy")</div>
+            <div style="font-size: 0.9rem; color: #555;">@item.Date.ToString("HH:mm")</div>
+        </td>
+        <td class="align-middle">
+            <div class="d-flex justify-content-center gap-2">
+                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark">EDIT</a>
+                <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-dark">DETAILS</a>
+                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-delete">DELETE</a>
+            </div>
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>

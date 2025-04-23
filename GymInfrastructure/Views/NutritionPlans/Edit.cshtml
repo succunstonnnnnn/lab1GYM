@@ -1,0 +1,40 @@
+@model GymDomain.Model.NutritionPlan
+
+@{
+ViewData["Title"] = "Edit Nutrition Plan";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Edit Nutrition Plan</h1>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group mt-3">
+        <a asp-action="SelectMeals" asp-route-id="@Model.Id" class="btn btn-outline-primary">
+            Edit Meals
+        </a>
+    </div>
+
+    <button type="submit" class="btn btn-dark mt-3">Save</button>
+</form>
+
+<div class="mt-2">
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

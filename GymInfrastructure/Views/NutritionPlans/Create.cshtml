@@ -1,0 +1,35 @@
+@model GymDomain.Model.NutritionPlan
+
+@{
+ViewData["Title"] = "Create";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create Nutrition Plan</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div class="form-group">
+                <label>Name</label>
+                <input asp-for="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input asp-for="Description" class="form-control" />
+            </div>
+            <div class="form-group mt-3">
+                <button type="submit" class="btn btn-primary">Create plan</button>
+            </div>
+            
+            <div class="form-group mt-2">
+                <a asp-action="Index">Back to List</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+@{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

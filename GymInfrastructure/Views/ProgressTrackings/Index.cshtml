@@ -1,0 +1,191 @@
+@using GymDomain.Model
+@{
+ViewData["Title"] = "Progress";
+}
+
+
+<div class="quad-container">
+    
+    <div class="quad-box">
+        <div class="quad-header">
+            <h5 class="fw-bold">BODY PARAMETERS</h5>
+            <a href="/BodyParameters" class="btn btn-sm btn-outline-dark">➤</a>
+        </div>
+
+        <form asp-action="Index" asp-controller="ProgressTrackings" method="get" class="mb-2">
+            <div class="d-flex justify-content-center align-items-center" style="gap: 12px; margin-bottom: 12px;">
+            <input type="date" name="startDate" value="@ViewBag.StartDate" class="form-control form-control-sm"/>
+                <span>—</span>
+                <input type="date" name="endDate" value="@ViewBag.EndDate" class="form-control form-control-sm"/>
+                <button type="submit" class="btn btn-outline-dark btn-sm">Filter</button>
+            </div>
+        </form>
+
+        <canvas id="weightChart" height="140" style="max-width: 100%; display: block;"></canvas>
+    </div>
+    
+    <div class="quad-box">
+        <div class="quad-header">
+            <h5 class="fw-bold">HISTORY</h5>
+            <a href="/ProgressHistory" class="btn btn-sm btn-outline-dark">➤</a>
+        </div>
+        <ul class="mb-0">
+            @foreach (var item in (List<ProgressHistory>)ViewBag.LastHistory)
+            {
+                <li>@item.Note – @item.Date.ToString("yyyy-MM-dd")</li>
+            }
+        </ul>
+    </div>
+    
+    <div class="quad-box">
+        <div class="quad-header">
+            <h5 class="fw-bold">PHOTO JOURNAL</h5>
+            <a href="/PhotoEntries" class="btn btn-sm btn-outline-dark">➤</a>
+        </div>
+        @{
+            var photo = (PhotoEntry)ViewBag.LastPhoto;
+        }
+        @if (photo != null)
+        {
+            <img src="@photo.PhotoPath" class="img-fluid quad-img" alt="Progress photo">
+            <p class="mt-2 text-muted text-end"><small>Added on: @photo.Date.ToString("yyyy-MM-dd")</small></p>
+        }
+        else
+        {
+            <p class="text-muted">No photo yet.</p>
+        }
+    </div>
+    
+    <div class="quad-box">
+        <div class="quad-header">
+            <h5 class="fw-bold">TRAINING WEIGHT</h5>
+            <a href="/TrainingWeights" class="btn btn-sm btn-outline-dark">➤</a>
+        </div>
+        <ul class="mb-0">
+            @foreach (var item in (List<TrainingWeight>)ViewBag.LastWeights)
+            {
+                var name = item.Exercise?.Name ?? item.ExerciseName;
+                <li>@name – @item.Weight kg (@item.Date.ToString("yyyy-MM-dd"))</li>
+            }
+        </ul>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('weightChart').getContext('2d');
+    const chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: @Html.Raw(Json.Serialize(ViewBag.WeightLabels)),
+            datasets: [{
+                label: 'Weight (kg)',
+                data: @Html.Raw(Json.Serialize(ViewBag.WeightValues)),
+                fill: true,
+                borderColor: 'rgba(102, 51, 255, 1)',
+                backgroundColor: 'rgba(102, 51, 255, 0.2)',
+                tension: 0.4,
+                pointBackgroundColor: 'rgba(102, 51, 255, 1)',
+                pointRadius: 6
+            }]
+        },
+        options: {
+            scales: {
+                y: { beginAtZero: false }
+            }
+        }
+    });
+</script>
+
+
+<style>
+    .quad-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 40px;
+    }
+
+    .quad-box {
+        width: 45%;
+        min-width: 300px;
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start; 
+        overflow: hidden;
+        height: auto;
+    }
+
+    .quad-box ul {
+        padding-left: 18px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .quad-box > * {
+        width: 100%; 
+    }
+    canvas {
+        width: 100% !important;
+        height: 220px !important; 
+    }
+
+    .quad-img {
+        width: 100%;
+        height: auto;
+        max-height: 230px;
+        object-fit: contain;
+        aspect-ratio: 9 / 16;
+        border-radius: 12px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .quad-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+    }
+
+    .quad-header h5 {
+        margin: 0;
+    }
+
+    @@media (max-width: 768px) {
+    .quad-box {
+        width: 100%;
+    }
+    }
+    .progress-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px;
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .card-item {
+        background-color: #f9f9f9;
+        border-radius: 16px;
+        padding: 24px;
+        font-size: 20px;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: all 0.2s ease-in-out;
+        text-align: center;
+    }
+
+    .card-item:hover {
+        background-color: #efefef;
+        transform: translateY(-2px);
+    }
+</style>

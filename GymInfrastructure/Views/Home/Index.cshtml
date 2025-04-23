@@ -1,0 +1,93 @@
+﻿@{
+ViewData["Title"] = "Welcome";
+}
+
+<style>
+    body {
+        position: relative;
+        background: url('@Url.Content("~/images/fitness-background.jpg")') no-repeat center center fixed;
+        background-size: cover;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+        z-index: 0;
+    }
+
+    .welcome-container {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 50px;
+        margin-top: 100px;
+        border-radius: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.7);
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .welcome-title {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    .welcome-text {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+
+    .btn-custom-outline {
+        background-color: transparent;
+        color: #000;
+        padding: 10px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 2px solid #000;
+        transition: all 0.3s ease;
+        font-size: 14px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    .btn-custom-outline:hover {
+        background-color: #000;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .bottom-space {
+        height: 100px;
+    }
+</style>
+
+<div class="welcome-container">
+    <h1 class="welcome-title">WELCOME TO MYFITNESS WEBSITE!</h1>
+    <p class="welcome-text">Your personal space to manage your fitness journey.</p>
+    <p class="welcome-text">Track your <strong>Training Plans</strong>, <strong>Nutrition Plans</strong>, and monitor your <strong>Progress</strong> all in one place.</p>
+    <div class="mt-4 d-flex justify-content-center gap-3">
+        <a asp-controller="Home" asp-action="GoToTrainingPlan" class="btn-custom-outline">START TRAINING</a>
+        <a asp-controller="Home" asp-action="GoToNutritionPlan" class="btn-custom-outline">EAT SMART</a>
+        <a asp-controller="Home" asp-action="GoToProgress" class="btn-custom-outline">TRACK PROGRESS</a>
+    </div>
+</div>
+
+<div class="text-center mt-5 mb-4">
+    <h4 style="font-style: italic; color: #fcfcfd; margin-bottom: 40px; margin-top: 80px;">
+        Every plan you choose writes your fitness story. Here’s how it looks so far.
+    </h4>
+</div>
+
+<div class="bottom-space"></div>

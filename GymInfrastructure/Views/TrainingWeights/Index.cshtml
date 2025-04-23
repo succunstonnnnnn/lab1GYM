@@ -1,0 +1,119 @@
+@model IEnumerable<GymDomain.Model.TrainingWeight>
+@{
+ViewData["Title"] = "Index";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .header-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .header-actions h1 {
+        font-weight: 600;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .btn-create {
+        padding: 10px 24px;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 600;
+        background-color: transparent;
+        border: 2px solid #000;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .btn-create:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .table th, .table td {
+        text-align: center;
+        padding: 14px;
+    }
+
+    .btn {
+        padding: 6px 14px;
+        border-radius: 12px;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        margin-right: 6px;
+    }
+
+    .btn-outline-dark {
+        border: 2px solid #000;
+        color: #000;
+        background-color: transparent;
+    }
+
+    .btn-outline-dark:hover {
+        background-color: #000;
+        color: #fff;
+    }
+
+    .btn-outline-danger {
+        border: 2px solid #2600005B;
+        color: #2600005B;
+        background-color: transparent;
+    }
+
+    .btn-outline-danger:hover {
+        background-color: transparent;
+        color: #2600005B;
+    }
+
+    .date-display {
+        font-weight: 500;
+    }
+
+    .time-display {
+        display: block;
+        margin-top: 2px;
+        color: #666;
+        font-size: 0.85rem;
+        font-weight: 400;
+    }
+</style>
+
+<div class="container mt-2 sticky-top bg-white" style="z-index: 1020;">
+    <div class="header-actions d-flex justify-content-between align-items-center pt-3 mb-4">
+        <h1 class="mb-0">WEIGHTS TRACKING</h1>
+        <a asp-action="Create" class="btn-create">Add New</a>
+    </div>
+</div>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Exercise</th>
+        <th>Weight</th>
+        <th>Date</th>
+        <th>Actions</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model) {
+    <tr>
+        <td>@item.ExerciseName</td>
+        <td>@item.Weight</td>
+        <td>
+            <span class="date-display">@item.Date.ToString("dd.MM.yyyy")</span>
+            <span class="time-display">@item.Date.ToString("HH:mm")</span>
+        </td>
+        <td>
+            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-dark">Edit</a>
+            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-outline-dark">Details</a>
+            <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">Delete</a>
+        </td>
+    </tr>
+    }
+    </tbody>
+</table>

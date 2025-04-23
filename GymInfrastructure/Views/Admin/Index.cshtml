@@ -1,0 +1,98 @@
+@{
+    ViewData["Title"] = "Admin Panel";
+    Layout = "/Views/Shared/_Layout.cshtml";
+
+    var exerciseLabels = ((List<string>)ViewBag.ExerciseLabels).Take(5).ToList();
+    var exerciseValues = ((List<int>)ViewBag.ExerciseValues).Take(5).ToList();
+
+    var mealLabels = ((List<string>)ViewBag.MealLabels).Take(5).ToList();
+    var mealValues = ((List<int>)ViewBag.MealValues).Take(5).ToList();
+}
+
+<h2 class="text-center mb-5">ADMIN PANEL</h2>
+
+<div class="admin-panel text-center">
+    <a asp-action="UserList" class="btn btn-outline-dark mb-4">VIEW USERS</a>
+
+    <div class="chart-section mb-5">
+        <h4 class="mb-3">EXERCISE POPULARITY</h4>
+        <canvas id="exerciseChart" width="400" height="200"></canvas>
+    </div>
+
+    <div class="chart-section">
+        <h4 class="mb-3">MEAL POPULARITY</h4>
+        <canvas id="mealChart" width="400" height="200"></canvas>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx1 = document.getElementById('exerciseChart').getContext('2d');
+    new Chart(ctx1, {
+        type: 'bar',
+        data: {
+            labels: @Html.Raw(Json.Serialize(exerciseLabels)),
+            datasets: [{
+                label: 'Number of Uses',
+                data: @Html.Raw(Json.Serialize(exerciseValues)),
+                backgroundColor: 'rgba(0, 0, 0, 0.7)'
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1,
+                        callback: function(value) {
+                            return Number.isInteger(value) ? value : null;
+                        }
+                    }
+                }
+            }
+        }
+    });
+
+    const ctx2 = document.getElementById('mealChart').getContext('2d');
+    new Chart(ctx2, {
+        type: 'bar',
+        data: {
+            labels: @Html.Raw(Json.Serialize(mealLabels)),
+            datasets: [{
+                label: 'Number of Uses',
+                data: @Html.Raw(Json.Serialize(mealValues)),
+                backgroundColor: 'rgba(0, 0, 0, 0.7)'
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true,
+                    ticks: {
+                        stepSize: 1,
+                        callback: function(value) {
+                            return Number.isInteger(value) ? value : null;
+                        }
+                    }
+                }
+            }
+        }
+    });
+</script>
+
+<style>
+    .admin-panel {
+        max-width: 700px;
+        margin: auto;
+    }
+
+    .chart-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    canvas {
+        max-width: 100%;
+    }
+</style>

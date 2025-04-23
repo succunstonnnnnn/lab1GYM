@@ -1,0 +1,82 @@
+@model GymDomain.Model.TrainingWeight
+
+@{
+ViewData["Title"] = "Create";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Create</h1>
+<h4>Training Weight</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div class="form-group">
+                <label for="ExerciseName">Exercise Name</label>
+                <input asp-for="ExerciseName" class="form-control" autocomplete="off" />
+            </div>
+
+            <div class="form-group mt-3">
+                <label asp-for="Weight" class="control-label"></label>
+                <input asp-for="Weight" class="form-control" />
+            </div>
+
+            <div class="form-group mt-3">
+                <label asp-for="Date" class="control-label"></label>
+                <input asp-for="Date" class="form-control" />
+            </div>
+
+            <button type="submit" class="btn btn-dark mt-4">Create</button>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/smoothness/jquery-ui.css" />
+
+    <script>
+        $(function () {
+            $("#ExerciseName").autocomplete({
+                source: function (request, response) {
+                    $.ajax({
+                        url: '@Url.Action("GetExerciseNames", "TrainingWeights")',
+                        data: { term: request.term },
+                        success: function (data) {
+                            response(data);
+                        }
+                    });
+                },
+                minLength: 1
+            });
+        });
+    </script>
+
+    <style>
+        .ui-autocomplete {
+            max-height: 200px;
+            overflow-y: auto;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            font-weight: 400;
+            background-color: white;
+            padding: 5px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1051 !important;
+        }
+
+        .ui-menu-item-wrapper {
+            padding: 6px 12px;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .ui-menu-item-wrapper:hover {
+            background-color: #f2f2f2;
+            cursor: pointer;
+        }
+    </style>
+}

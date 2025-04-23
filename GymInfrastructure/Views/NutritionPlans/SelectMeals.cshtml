@@ -1,0 +1,54 @@
+@{
+ViewData["Title"] = "Select Meals";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<form asp-action="SelectMeals" method="post">
+    @Html.AntiForgeryToken()
+    <input type="hidden" name="id" value="@ViewBag.NutritionPlanId"/>
+    
+    <div class="sticky-top bg-white py-3 mb-4 shadow-sm" style="z-index: 1000;">
+        <h1 class="text-center fw-bold mb-2" style="font-size: 2.2rem; letter-spacing: 1px;">
+            SELECT MEALS FOR THE PLAN @ViewBag.NutritionPlanName
+        </h1>
+
+        <div class="text-center">
+            <button type="submit" class="btn btn-dark btn-lg px-5 py-2" style="letter-spacing: 1px; font-weight: 500;">
+                SAVE
+            </button>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        @foreach (var meal in ViewBag.Meals)
+        {
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4 text-center">
+            <div class="card h-100 p-3">
+                <img src="@meal.ImagePath"
+                     alt="@meal.Name"
+                     class="img-fluid mb-2"
+                     style="width: 100%; aspect-ratio: 1/1; object-fit: cover; border-radius: 12px;" />
+
+                <h5 class="text-uppercase">@meal.Name</h5>
+                <p class="text-muted">@meal.Description</p>
+
+                @if (!string.IsNullOrEmpty(meal.ReferenceUrl))
+                {
+                <p>
+                    <a href="@meal.ReferenceUrl" target="_blank" class="btn btn-sm btn-outline-secondary mt-1">
+                        Watch recipe on YouTube
+                    </a>
+                </p>
+                }
+
+                <div class="form-check d-flex justify-content-center align-items-center">
+                    <input type="checkbox" class="form-check-input me-2" name="selectedMeals" value="@meal.Id" />
+                    <label class="form-check-label">Add</label>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</form>
+
+<a asp-action="Index" class="btn btn-link mt-3">Back to List</a>

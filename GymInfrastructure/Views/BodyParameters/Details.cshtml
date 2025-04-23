@@ -1,0 +1,63 @@
+@model GymDomain.Model.BodyParameter
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>BodyParameter</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Weight)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Weight)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Waist)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Waist)
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Chest)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Chest)
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Thigh)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Thigh)
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Biceps)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Biceps)
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Calf)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Calf)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Glutes)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Glutes)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

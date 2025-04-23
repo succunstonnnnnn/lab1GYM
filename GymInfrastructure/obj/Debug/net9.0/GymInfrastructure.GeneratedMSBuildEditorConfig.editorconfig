@@ -1,0 +1,281 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = GymInfrastructure
+build_property.RootNamespace = GymInfrastructure
+build_property.ProjectDir = /Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = /Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9SZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Admin/UserList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWRtaW4vVXNlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/BodyParameters/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9keVBhcmFtZXRlcnMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/BodyParameters/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9keVBhcmFtZXRlcnMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/BodyParameters/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9keVBhcmFtZXRlcnMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/BodyParameters/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9keVBhcmFtZXRlcnMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/BodyParameters/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQm9keVBhcmFtZXRlcnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Exercises/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhlcmNpc2VzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Exercises/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhlcmNpc2VzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Exercises/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhlcmNpc2VzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Exercises/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhlcmNpc2VzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Exercises/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhlcmNpc2VzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Meals/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVhbHMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Meals/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVhbHMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Meals/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVhbHMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Meals/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVhbHMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Meals/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWVhbHMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/NutritionPlans/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTnV0cml0aW9uUGxhbnMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/NutritionPlans/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTnV0cml0aW9uUGxhbnMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/NutritionPlans/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTnV0cml0aW9uUGxhbnMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/NutritionPlans/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTnV0cml0aW9uUGxhbnMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/NutritionPlans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTnV0cml0aW9uUGxhbnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/NutritionPlans/SelectMeals.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTnV0cml0aW9uUGxhbnMvU2VsZWN0TWVhbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/PhotoEntries/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGhvdG9FbnRyaWVzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/PhotoEntries/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGhvdG9FbnRyaWVzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/PhotoEntries/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGhvdG9FbnRyaWVzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/PhotoEntries/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGhvdG9FbnRyaWVzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/PhotoEntries/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUGhvdG9FbnRyaWVzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressHistories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NIaXN0b3JpZXMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressHistories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NIaXN0b3JpZXMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressHistories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NIaXN0b3JpZXMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressHistories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NIaXN0b3JpZXMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressHistories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NIaXN0b3JpZXMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressTrackings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NUcmFja2luZ3MvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressTrackings/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NUcmFja2luZ3MvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressTrackings/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NUcmFja2luZ3MvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressTrackings/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NUcmFja2luZ3MvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/ProgressTrackings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUHJvZ3Jlc3NUcmFja2luZ3MvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingPlans/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdQbGFucy9DcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingPlans/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdQbGFucy9EZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingPlans/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdQbGFucy9EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingPlans/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdQbGFucy9FZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingPlans/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdQbGFucy9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingPlans/SelectExercises.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdQbGFucy9TZWxlY3RFeGVyY2lzZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingWeights/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdXZWlnaHRzL0NyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingWeights/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdXZWlnaHRzL0RlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingWeights/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdXZWlnaHRzL0RldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingWeights/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdXZWlnaHRzL0VkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/TrainingWeights/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVHJhaW5pbmdXZWlnaHRzL0luZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Users/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Users/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Users/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Users/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Users/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/katerina/Desktop/uni/istp/GymMVC/GymInfrastructure/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-0yaoo8rmpd

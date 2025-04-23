@@ -1,0 +1,192 @@
+@model IEnumerable<GymDomain.Model.BodyParameter>
+
+@{
+ViewData["Title"] = "Body Parameters";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .parameter-section {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .accordion-item {
+        background-color: #f9f9f9;
+        border-radius: 12px;
+        margin-bottom: 12px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        overflow: hidden;
+    }
+
+    .accordion-header {
+        padding: 16px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        font-size: 1rem;
+        border-bottom: 1px solid #e2e2e2;
+    }
+
+    .accordion-header:hover {
+        background-color: #f0f0f0;
+    }
+
+    .accordion-content {
+        display: none;
+        padding: 20px;
+        font-size: 1rem;
+    }
+
+    .accordion-content div {
+        margin-bottom: 8px;
+    }
+
+    .parameter-actions {
+        margin-top: 16px;
+        display: flex;
+        gap: 12px;
+        font-size: 0.9rem;
+    }
+
+    .btn-custom-black {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 2px solid #000;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        font-size: 14px;
+        display: inline-block;
+    }
+
+    .btn-custom-black:hover {
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+    }
+
+    .accordion-toggle {
+        font-size: 18px;
+        transition: transform 0.3s ease;
+    }
+
+    .accordion-item.active .accordion-toggle {
+        transform: rotate(180deg);
+    }
+</style>
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-start mb-4 pt-3">
+        <div>
+            <h1 class="fw-bold mb-3" style="font-size: 2.4rem; letter-spacing: 1px;">BODY PARAMETERS</h1>
+
+            <form method="get" asp-action="Index" class="d-flex gap-3 align-items-end">
+                <div>
+                    <label>Start Date</label>
+                    <input type="date" name="startDate" class="form-control" value="@ViewBag.StartDate" />
+                </div>
+                <div>
+                    <label>End Date</label>
+                    <input type="date" name="endDate" class="form-control" value="@ViewBag.EndDate" />
+                </div>
+                <button type="submit" class="btn btn-outline-dark">Apply</button>
+            </form>
+        </div>
+
+        <div class="text-end">
+            <a asp-action="Create" class="btn btn-dark mb-3">Add New</a>
+
+            <form asp-action="ExportToPdf" method="post">
+                <input type="hidden" name="startDate" value="@ViewBag.StartDate" />
+                <input type="hidden" name="endDate" value="@ViewBag.EndDate" />
+                <button type="submit" class="btn btn-dark">Export to PDF</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="mb-5">
+        <canvas id="weightChart" style="width: 100%; max-width: 700px; height: 300px; margin: 0 auto;"></canvas>
+    </div>
+
+    <div class="parameter-section">
+        @foreach (var item in Model)
+        {
+        <div class="accordion-item">
+            <div class="accordion-header" onclick="toggleAccordion(this)">
+                <span>@item.Date.ToShortDateString()</span>
+                <span class="accordion-toggle">&#9660;</span>
+            </div>
+            <div class="accordion-content">
+                <div>Weight: @item.Weight</div>
+                <div>Waist: @item.Waist</div>
+                <div>Chest: @item.Chest</div>
+                <div>Thigh: @item.Thigh</div>
+                <div>Biceps: @item.Biceps</div>
+                <div>Calf: @item.Calf</div>
+                <div>Glutes: @item.Glutes</div>
+
+                <div class="parameter-actions">
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                </div>
+            </div>
+        </div>
+        }
+    </div>
+</div>
+
+<script>
+    function toggleAccordion(header) {
+        const item = header.parentElement;
+        item.classList.toggle("active");
+
+        const content = header.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    const ctx = document.getElementById('weightChart');
+
+    new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: @Html.Raw(Json.Serialize(Model.Select(p => p.Date.ToString("dd.MM")))),
+            datasets: [{
+                label: 'Weight',
+                data: @Html.Raw(Json.Serialize(Model.Select(p => p.Weight))),
+                borderColor: '#7C3AED',
+                backgroundColor: 'rgba(124, 58, 237, 0.2)',
+                fill: true,
+                tension: 0.4,
+                pointBackgroundColor: '#7C3AED',
+                pointRadius: 6
+            }]
+        },
+        options: {
+            plugins: {
+                legend: { display: false }
+            },
+            scales: {
+                x: {
+                    title: { display: true, text: 'Date' }
+                },
+                y: {
+                    title: { display: true, text: 'Weight (kg)' },
+                    beginAtZero: false
+                }
+            }
+        }
+    });
+</script>

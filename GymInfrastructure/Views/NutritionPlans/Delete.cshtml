@@ -1,0 +1,55 @@
+@model GymDomain.Model.NutritionPlan
+
+@{
+ViewData["Title"] = "Delete";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-5">
+
+    <h1 class="fw-bold text-uppercase" style="font-size: 2.4rem; letter-spacing: 1px;">
+        DELETE NUTRITION PLAN
+    </h1>
+
+    <h5 class="text-secondary fw-semibold mt-2 mb-4" style="letter-spacing: 1px;">
+        ARE YOU SURE YOU WANT TO DELETE THIS?
+    </h5>
+
+    <dl class="row px-1">
+        <dt class="col-sm-2 fw-semibold text-uppercase" style="font-size: 0.95rem;">Name</dt>
+        <dd class="col-sm-10">@Model.Name</dd>
+
+        <dt class="col-sm-2 fw-semibold text-uppercase" style="font-size: 0.95rem;">Description</dt>
+        <dd class="col-sm-10">@Model.Description</dd>
+    </dl>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="d-flex justify-content-start gap-3 mt-4">
+            <button type="submit" class="btn btn-custom-black">DELETE</button>
+            <a asp-action="Index" class="btn btn-link fw-semibold text-uppercase" style="font-size: 13px;">BACK TO LIST</a>
+        </div>
+    </form>
+
+</div>
+
+<style>
+    .btn-custom-black {
+        background-color: #000;
+        color: #fff;
+        padding: 10px 24px;
+        border-radius: 8px;
+        font-weight: 600;
+        text-transform: uppercase;
+        border: 2px solid #000;
+        transition: all 0.3s ease;
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .btn-custom-black:hover {
+        background-color: #fff;
+        color: #000;
+        text-decoration: none;
+    }
+</style>

@@ -1,0 +1,82 @@
+@model GymDomain.Model.Meal
+
+@{
+ViewData["Title"] = "Details";
+Layout = "/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Meal</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Calories)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Calories)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Protein)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Protein)
+        </dd>
+
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Fats)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Fats)
+        </dd>
+
+        <dt class="col-sm-2">
+            Image
+        </dt>
+        <dd class="col-sm-10">
+            @if (!string.IsNullOrEmpty(Model.ImagePath))
+            {
+            <img src="@Model.ImagePath" alt="Meal Image" style="max-width: 300px; height: auto;" />
+            }
+            else
+            {
+            <span>No image</span>
+            }
+        </dd>
+
+        <dt class="col-sm-2">
+            Reference
+        </dt>
+        <dd class="col-sm-10">
+            @if (!string.IsNullOrEmpty(Model.ReferenceUrl))
+            {
+            <a href="@Model.ReferenceUrl" target="_blank">Watch recipe on YouTube</a>
+            }
+            else
+            {
+            <span>No link</span>
+            }
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
